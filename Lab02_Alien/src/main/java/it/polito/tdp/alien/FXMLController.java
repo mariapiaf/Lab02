@@ -64,13 +64,14 @@ public class FXMLController {
     		elenco.addWord(parole[0], parole[1]);
     	}
     	else if(!testo.contains(" ")) {
-    		txtResult.setText(elenco.translateWord(testo));
+    		//txtResult.setText(elenco.translateWord(testo));
+    		String parole[] = testo.split(" ");
+    		txtResult.setText(elenco.translateWordEnhanced(parole[0]));
     	}
     	
     	txtTraduzione.setText("");
     }
 
-    //fare esercizio 2
    
     @FXML
     void initialize() {
