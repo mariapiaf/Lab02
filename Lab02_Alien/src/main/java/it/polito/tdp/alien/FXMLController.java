@@ -72,6 +72,7 @@ public class FXMLController {
     	txtTraduzione.setText("");
     }
 
+    //fare esercizio 2
    
     @FXML
     void initialize() {
